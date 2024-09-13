@@ -1,0 +1,134 @@
+:root {
+  --bgGroud: #ecdfcc;
+  --bgSegond: #697565;
+  --textPrin: #3c3d37;
+  --textSegond: #181c14;
+}
+body {
+  background-color: var(--bgGroud);
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  height: 100vh;
+}
+footer {
+  background-color: var(--bgSegond);
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  height: 100px;
+}
+main {
+  flex-grow: 1;
+}
+header {
+  width: 100%;
+  height: 50px;
+  background-color: var(--bgSegond);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-left: 10px;
+  box-shadow: 0px 0px 15px var(--bgSegond);
+}
+.acor_optn {
+  background-color: var(--bgSegond);
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  box-shadow: 1px 1px 15px var(--bgSegond);
+}
+.acor_optn div {
+  width: 100%;
+}
+.acor_box_h2 {
+  height: 20%;
+}
+.acor_box_h2 h2 {
+  text-align: center;
+}
+.acor_box_form {
+  height: 50%;
+}
+.acor_box_form form {
+  width: 100%;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.acor_box_form form input {
+  width: 100%;
+  height: 30px;
+  max-width: 300px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 15px;
+}
+.acor_box_form form input::placeholder {
+  color: var(--bgGroud);
+}
+.acor_box_form form button {
+  width: 40%;
+  max-width: 100px;
+
+  font-weight: 600;
+  height: 30px;
+  background-color: var(--textSegond);
+  color: var(--bgGroud);
+  border-radius: 5px;
+  font-size: 15px;
+  padding: 5px;
+}
+
+.acor_box_res {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.acor_box_res h3 {
+  text-align: center;
+  color: var(--bgGroud);
+  font-size: 1me;
+  overflow: hidden;
+}
+.acor_box_res button {
+  width: 50px;
+  height: 30px;
+  border: none;
+  font-weight: 600;
+  padding: 5px;
+
+  background-color: var(--textSegond);
+  color: var(--bgGroud);
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+
+@media (min-width: 300px) {
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .acor_optn {
+    width: 400px;
+  }
+  .acor_box_form form {
+    flex-direction: row;
+  }
+  .acor_box_res {
+    flex-direction: row;
+  }
+}
